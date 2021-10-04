@@ -13,7 +13,7 @@ let img = document.querySelectorAll(".home__slider img").forEach((images) => {
   };
 });
 
-const swiper = new Swiper(".home-slider", {
+const swiper1 = new Swiper(".home-slider", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -25,5 +25,31 @@ const swiper = new Swiper(".home-slider", {
     modifier: 1,
     slideShadows: true,
   },
-  loop: true;
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
+
+const swiper2 = new Swiper(".review-slider", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 10,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1050: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 });

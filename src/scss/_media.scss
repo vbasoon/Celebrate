@@ -5,6 +5,10 @@
   .header {
     padding: 1.5rem 2rem;
   }
+
+  section {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -42,5 +46,21 @@
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home-slider {
+    .slide {
+      width: 27rem;
+    }
+  }
+
+  .contact {
+    form {
+      .inputBox {
+        input {
+          width: 100%;
+        }
+      }
+    }
   }
 }
