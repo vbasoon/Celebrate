@@ -1,0 +1,29 @@
+.home {
+  //width: 100%;
+  min-height: 100vh;
+  padding-top: 12rem;
+  //background: url(../images/home-bg.jpg) no-repeat center/cover;
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  &__content {
+    flex: 1 1 42rem;
+    h3 {
+      font-size: 6.5rem;
+      color: $color-main;
+      text-transform: uppercase;
+    }
+  }
+  &__image {
+    flex: 1 1 42rem;
+    padding-top: 10rem;
+    text-align: center;
+    img {
+      height: 35rem;
+      animation: float 4s linear infinite;
+    }
+  }
+}

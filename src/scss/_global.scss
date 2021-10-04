@@ -1,0 +1,38 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:100,300,400,500,600";
+@include google-font("Poppins", "100,300,400,500,600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+h1 {
+  //font-family: "Tintos";
+}
+
+a {
+  text-decoration: none;
+}
+
+
+}
