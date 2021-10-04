@@ -1,6 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:100,300,400,500,600";
-@include google-font("Poppins", "100,300,400,500,600");
-
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +13,23 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $color-main;
+  border-radius: 5rem;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
+  background-color: #222;
+  font-family: "Nunito", sans-serif;
+  //text-transform: capitalize;
   transition: all 0.2s ease;
 }
 
@@ -32,7 +43,4 @@ h1 {
 
 a {
   text-decoration: none;
-}
-
-
 }

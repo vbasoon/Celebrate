@@ -2,6 +2,41 @@
   html {
     font-size: 55%;
   }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__menu {
+      //width: 100%;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      border-top: 1rem solid #222;
+      background-color: #333;
+      &-list {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+      }
+      &-item {
+        display: block;
+        background-color: #222;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+      }
+      &-link {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  #menu-btn {
+    display: initial;
+  }
 }
 
 @media (max-width: 450px) {

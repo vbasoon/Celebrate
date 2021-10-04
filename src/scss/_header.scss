@@ -7,31 +7,35 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 2rem 9%;
+  background-color: #333;
+  //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 9%;
 
   &__logo {
     &-link {
-      color: $color-main;
-      font-size: 2.3rem;
-      i {
+      color: #fff;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin-left: -5px;
+      span {
         color: $color-main;
-        padding-left: 0.5rem;
       }
     }
   }
   &__menu {
     &-list {
       display: flex;
-      gap: 20px;
+      gap: 2rem;
     }
     &-item {
       list-style-type: none;
     }
     &-link {
       font-size: 1.7rem;
-      color: $color-main;
+      color: #fff;
+      &:hover {
+        color: $color-main;
+      }
     }
   }
   &__btns {
@@ -40,7 +44,7 @@
 
   #menu-btn {
     font-size: 3rem;
-    color: $color-main;
+    color: #fff;
     cursor: pointer;
     display: none;
   }

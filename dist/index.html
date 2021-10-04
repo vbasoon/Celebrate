@@ -13,7 +13,29 @@
 </head>
 
 <body>
-  @@include('_header.html')
+  <header class="header" id="header">
+
+    <div class="header__logo">
+        <a href="#" class="header__logo-link"><span>L</span>et`s <span>C</span>elebrate
+            </a>
+    </div>
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#home" class="header__menu-link header__menu-link--active">home</a></li>
+            <li class="header__menu-item"><a href="#service" class="header__menu-link header__menu-link--active">service</a></li>
+            <li class="header__menu-item"><a href="#about" class="header__menu-link">about</a></li>
+            <li class="header__menu-item"><a href="#gallery" class="header__menu-link">gallery</a></li>
+            <li class="header__menu-item"><a href="#price" class="header__menu-link">price</a></li>
+            <li class="header__menu-item"><a href="#review" class="header__menu-link">review</a></li>
+            <li class="header__menu-item"><a href="#contact" class="header__menu-link">contact</a></li>
+        </ul>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+
+
+</header>
   <main class="main">
     <section class="home" id="home">
 
@@ -51,7 +73,9 @@
 
 
   </main>
-  @@include('_footer.html')
+  <footer class="footer" id="footer">
+    footer
+</footer>
 
 
   <script src="js/main.min.js"></script>
